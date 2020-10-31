@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :anime do
-    title { "MyString" }
-    plot { "MyString" }
-    release_date { "2020-10-31" }
+    title { Faker::Book.title }
+    plot { Faker::Lorem.paragraph }
+    release_date { Faker::Date.birthday(18, 65) }
   end
 end
